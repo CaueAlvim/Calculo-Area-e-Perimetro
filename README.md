@@ -1,2 +1,4 @@
-# Calculo Area e Perimetro
- Repositorio- Engenharia de Software.
+# Cálculo Área e Perímetro
+ Repositório- Engenharia de Software.
+
+ Repositório criado para atividade solicitada pelo Professor Leandro Luque.
