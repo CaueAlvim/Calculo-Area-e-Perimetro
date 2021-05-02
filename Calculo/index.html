@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo área e Perímetro.</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: red;
+            }
+    </style>
+</head>
+<body>
+    <h1>Cálculo área e Perímetro.</h1>
+    <h2>Circuferências e Retângulos.</h2>
+    <script>
+        var auxiliar= 0
+        var nome = window.prompt("Qual é o seu nome: ")
+        do {
+        var raio = Number.parseFloat(window.prompt("Insirra o raio da circuferencia: "))
+        var circuferencia_area = (3.14 *(raio*raio))
+        var circuferencia_perimetro = ((3.14*3.14)*raio)
+        window.alert("A Area dessa Circuferencia é " + circuferencia_area
+        + "\nO Perimetro dessa Circuferencia é " + circuferencia_perimetro)
+        var base = Number.parseFloat(window.prompt("Insira a base do retangulo: "))
+        var altura = Number.parseFloat(window.prompt("Insira a altura do retagulo: "))
+        var retangulo_area = base*altura
+        var retangulo_perimetro = (2*(base+altura))
+        window.alert("A Area desse Retangulo é " + retangulo_area
+        + "\nO Perimetro desse Retangulo é " + retangulo_perimetro)
+        auxiliar = Number.parseInt(window.prompt(nome + ", vc quer refazer esse processo ??"
+        + "\nDigite 0 caso a resposta seja positiva\n" 
+        + "\nE qualquer outro caracter caso a resposta seja negativa"))
+        }while(auxiliar==0)
+        document.writeln("Obrigado por usar o nosso sistema")
+    </script>
+</body>
+</html>
